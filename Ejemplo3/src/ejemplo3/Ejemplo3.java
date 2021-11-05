@@ -118,7 +118,7 @@ public class Ejemplo3 extends JFrame{
         boton3.setBounds(15,220,195,50);
         botonLimpiar.setBounds(15,285,195,50);
         boton1.setFont(new Font("MONOSPACED",PLAIN,16));
-        boton2.setFont(new Font("MONOSPACED",PLAI,16));
+        boton2.setFont(new Font("MONOSPACED",PLAIN,16));
         boton3.setFont(new Font("MONOSPACED",PLAIN,16));
         botonLimpiar.setFont(new Font("MONOSPACED",PLAIN,16));
         boton1.setOpaque(true);
