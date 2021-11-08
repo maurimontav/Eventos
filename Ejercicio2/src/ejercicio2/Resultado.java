@@ -94,7 +94,7 @@ public class Resultado extends JDialog implements ActionListener{
             texto = "Ha ganado nones";
         
         } else if (pares==nones) {
-            texto = "Habéis empatado";
+            texto = "Has empatado";
         }
         
         return texto;
