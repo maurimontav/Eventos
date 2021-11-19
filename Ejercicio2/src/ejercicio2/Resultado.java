@@ -25,7 +25,7 @@ public class Resultado extends JDialog implements ActionListener{
     /* Declaro variables */
 
     private JButton boton2;
-    private JLabel label1;
+    private static JLabel label1,label2,label3;
     
 
     /* Constructor que recibe el JFrame Ejemplo5Principal como parent y el modal */
@@ -46,15 +46,25 @@ public class Resultado extends JDialog implements ActionListener{
         
         
         label1 = new JLabel();
-        label1.setBounds(150,50,200,30);
+        label1.setBounds(135,25,200,30);
         add(label1);
-    
+        label2 = new JLabel();
+        label2.setBounds(120,45,200,30);
+        add(label2);
+        label3 = new JLabel();
+        label3.setBounds(160,65,200,30);
+        add(label3);
         
+        Principal principal = new Principal();
         
-        String texto = obtenerTexto(); 
+        int pares = principal.getValor();
+        int nones = (int)(Math.random()*5+1);
         
-        label1.setText(texto);
-                
+        label1.setText("Tú elegiste el número: " + pares);
+        label2.setText("La máquina eligió el número: " + nones);
+        
+        mostrarGanador(pares,nones);
+        
         //Botón
 
         boton2 = new JButton("Volver");
@@ -78,26 +88,13 @@ public class Resultado extends JDialog implements ActionListener{
         } 
  
     
-    private String obtenerTexto() {
-        
-        String texto = null;
-        
-        Principal principal = new Principal();
-        
-        int pares = principal.getValor();
-        int nones = (int)(Math.random()*5+1);
-        
-        if (pares>nones) {
-            texto = "¡Enhorabuena, has ganado!";
-        
-        } else if (nones>pares) {
-            texto = "Ha ganado nones";
-        
-        } else if (pares==nones) {
-            texto = "Habéis empatado";
+    private static void mostrarGanador(int pares, int nones) {
+                
+        if ((pares+nones)%2==0) {
+            label3.setText("Ha ganado: pares");
+        } else {
+            label3.setText("Ha ganado: nones");
         }
-        
-        return texto;
             
     }
 
