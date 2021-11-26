@@ -66,7 +66,7 @@ public class Ejemplo15 extends JFrame implements ChangeListener{
         Ejemplo15 formularioCheckbox = new Ejemplo15();
         formularioCheckbox.setDefaultCloseOperation(EXIT_ON_CLOSE);
         formularioCheckbox.setBounds(0,0,300,200);
-        formularioCheckbox.setVisible(true)
+        formularioCheckbox.setVisible(true);
         
     }   
 
