@@ -91,7 +91,7 @@ public class Ejemplo14 extends JFrame implements ActionListener{
 
         Ejemplo14 formulario1=new Ejemplo14();
         formulario1.setBounds(0,0,300,200);
-        formulario1.setVisible(true)
+        formulario1.setVisible(true);
 
     }
 

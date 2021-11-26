@@ -43,7 +43,7 @@ public class Ejemplo12 extends JFrame{
 
     public static void main(String[] args) {
 
-        new Ejemplo12();
+        new Ejemplo12()
 
     }
 
