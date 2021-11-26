@@ -63,7 +63,7 @@ public class Ejemplo16 extends JFrame implements ChangeListener{
         Ejemplo16 formularioRadio =new Ejemplo16();
         formularioRadio.setDefaultCloseOperation(EXIT_ON_CLOSE);
         formularioRadio.setBounds(0,0,350,230);
-        formularioRadio.setVisible(true)
+        formularioRadio.setVisible(true);
 
     }   
 
