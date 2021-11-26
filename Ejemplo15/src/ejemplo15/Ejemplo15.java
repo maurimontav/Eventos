@@ -57,7 +57,6 @@ public class Ejemplo15 extends JFrame implements ChangeListener{
         //Quito la última ',' y escribo el texto
 
         texto = texto.substring(0, texto.length() - 2);
-   
         label1.setText(texto);
 
         }
